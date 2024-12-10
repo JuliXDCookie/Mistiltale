@@ -8,6 +8,7 @@ from PythonAssets.Functions import CreatePlayer, DeletePlayer, CreateMap
 
 #StartUp
 os.system("title Mistiltale")
+os.system("cls")
 
 #Globals
 with open("Paths.json", "r") as f:
