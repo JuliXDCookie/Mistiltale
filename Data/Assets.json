@@ -1,0 +1,74 @@
+{
+    "Map": {
+        "EnvironmentTypes": {
+            "Plains": 0,
+            "Snowy Taiga": 1,
+            "Forest": 2,
+            "Mountain": 3,
+            "Sea": 4,
+            "Cracked Realm": 5,
+            "Shattered Realm": 6
+        },
+        "AreaTypes": {
+            "Fighting-Area": 0,
+            "Event-Area": 1,
+            "Resting-Area": 2,
+            "Merchant-Area": 3,
+            "Treasure-Area": 4,
+            "Miniboss-Area": 5,
+            "Boss-Area": 6
+        }
+    },
+    "Enemies": {},
+    "Mini-Bosses": {},
+    "Boss": {},
+    "Events": {
+        "Plains": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {},
+            "Event4": {},
+            "Event5": {},
+            "Event6": {},
+            "Event7": {},
+            "Event8": {},
+            "Event9": {},
+            "Event10": {}
+        },
+        "Snowy Taiga": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {},
+            "Event4": {},
+            "Event5": {}
+        },
+        "Forest": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {},
+            "Event4": {},
+            "Event5": {},
+            "Event6": {},
+            "Event7": {},
+            "Event8": {},
+            "Event9": {},
+            "Event10": {}
+        },
+        "Mountain": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {},
+            "Event4": {},
+            "Event5": {},
+            "Event6": {}
+        },
+        "Sea": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {}
+        }
+    },
+    "Weapons": {},
+    "Artifacts": {},
+    "Potions": {}
+}

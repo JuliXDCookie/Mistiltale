@@ -1,0 +1,8 @@
+{
+    "Paths": {
+        "PlayerData": "Data/PlayerData.json",
+        "MapData": "Data/MapData.json",
+        "Assets": "Data/Assets.json",
+        "Temp": "Data/Temp.json"
+    }
+}
