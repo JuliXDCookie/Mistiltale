@@ -209,14 +209,17 @@ def CreateMap():
         if num >= 1 and num < 31:
             dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Plains"]
 
-        elif num >= 31 and num < 61:
+        elif num >= 31 and num < 51:
             dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Forest"]
 
-        elif num >= 61 and num < 81:
+        elif num >= 51 and num < 71:
+            dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Snowy Taiga"]
+
+        elif num >= 71 and num < 86:
             dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Mountain"]
 
-        elif num >= 81 and num < 96:
-            dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Snowy Taiga"]
+        elif num >= 86 and num < 96:
+            dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Desert"]
 
         else:
             dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] = dataA["Map"]["EnvironmentTypes"]["Sea"]
@@ -409,21 +412,28 @@ def CreateMap():
                     json.dump(dataM, f, indent=4)
 
             elif dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] == 1:
-                num = random.randint(1, 5)
+                num = random.randint(1, 8)
                 dataM["MapData"][f"{player_name}"][f"Area{i}"]["Event"] = num
 
                 with open(map_data_path, "w") as f:
                     json.dump(dataM, f, indent=4)
 
             elif dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] == 2:
-                num = random.randint(1, 10)
+                num = random.randint(1, 6)
                 dataM["MapData"][f"{player_name}"][f"Area{i}"]["Event"] = num
 
                 with open(map_data_path, "w") as f:
                     json.dump(dataM, f, indent=4)
 
             elif dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] == 3:
-                num = random.randint(1, 6)
+                num = random.randint(1, 5)
+                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Event"] = num
+
+                with open(map_data_path, "w") as f:
+                    json.dump(dataM, f, indent=4)
+
+            elif dataM["MapData"][f"{player_name}"][f"Area{i}"]["EnvironmentType"] == 4:
+                num = random.randint(1, 5)
                 dataM["MapData"][f"{player_name}"][f"Area{i}"]["Event"] = num
 
                 with open(map_data_path, "w") as f:
@@ -447,59 +457,201 @@ def CreateMap():
 
             dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"] = {}
 
+            with open(map_data_path, "w") as f:
+                json.dump(dataM, f, indent=4)
+
             if player_class == "Swordsman":
-                num = random.randint(1, 15)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Weapon1"] = num
-                num = random.randint(1, 15)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Weapon2"] = num
 
-                num = random.randint(1, 20)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Artifact1"] = num
-                num = random.randint(1, 20)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Artifact2"] = num
+                x = 0
+                while x < 2:
+                    x = x + 1
 
-                num = random.randint(1, 10)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Potion1"] = num
-                num = random.randint(1, 10)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Potion2"] = num
+                    with open(map_data_path, "r") as f:
+                        dataM = json.load(f)
 
-                with open(map_data_path, "w") as f:
-                    json.dump(dataM, f, indent=4)
+                    num = random.randint(1, 100)
+
+                    if num >= 1 and num < 41:
+                        rarity = 0
+                    
+                    elif num >= 41 and num < 71:
+                        rarity = 1
+
+                    elif num >= 71 and num < 86:
+                        rarity = 2
+
+                    elif num >= 86 and num < 96:
+                        rarity = 3
+
+                    else:
+                        rarity = 4
+
+                    if rarity == 0:
+                        num = random.randint(1, 7)
+
+                    elif rarity == 1:
+                        num = random.randint(8, 11)
+
+                    elif rarity == 2:
+                        num = random.randint(12, 15)
+
+                    elif rarity == 3:
+                        num = random.randint(16, 18)
+
+                    else:
+                        num = random.randint(19, 20)
+
+                    dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"][f"Weapon{x}"] = num
+                    
+                    with open(map_data_path, "w") as f:
+                        json.dump(dataM, f, indent=4)
 
             elif player_class == "Archer":
-                num = random.randint(16, 30)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Weapon1"] = num
-                num = random.randint(16, 30)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Weapon2"] = num
 
-                num = random.randint(1, 20)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Artifact1"] = num
-                num = random.randint(1, 20)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Artifact2"] = num
+                x = 0
+                while x < 2:
+                    x = x + 1
 
-                num = random.randint(1, 10)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Potion1"] = num
-                num = random.randint(1, 10)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Potion2"] = num
+                    with open(map_data_path, "r") as f:
+                        dataM = json.load(f)
 
+                    num = random.randint(1, 100)
+
+                    if num >= 1 and num < 41:
+                        rarity = 0
+                    
+                    elif num >= 41 and num < 71:
+                        rarity = 1
+
+                    elif num >= 71 and num < 86:
+                        rarity = 2
+
+                    elif num >= 86 and num < 96:
+                        rarity = 3
+
+                    else:
+                        rarity = 4
+
+                    if rarity == 0:
+                        num = random.randint(21, 27)
+
+                    elif rarity == 1:
+                        num = random.randint(28, 31)
+
+                    elif rarity == 2:
+                        num = random.randint(32, 35)
+
+                    elif rarity == 3:
+                        num = random.randint(36, 38)
+
+                    else:
+                        num = random.randint(39, 40)
+
+                    dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"][f"Weapon{x}"] = num
+                    
+                    with open(map_data_path, "w") as f:
+                        json.dump(dataM, f, indent=4)
+
+            elif player_class == "Mage":
+
+                x = 0
+                while x < 2:
+                    x = x + 1
+
+                    with open(map_data_path, "r") as f:
+                        dataM = json.load(f)
+
+                    num = random.randint(1, 100)
+
+                    if num >= 1 and num < 41:
+                        rarity = 0
+                    
+                    elif num >= 41 and num < 71:
+                        rarity = 1
+
+                    elif num >= 71 and num < 86:
+                        rarity = 2
+
+                    elif num >= 86 and num < 96:
+                        rarity = 3
+
+                    else:
+                        rarity = 4
+
+                    if rarity == 0:
+                        num = random.randint(41, 47)
+
+                    elif rarity == 1:
+                        num = random.randint(48, 51)
+
+                    elif rarity == 2:
+                        num = random.randint(52, 55)
+
+                    elif rarity == 3:
+                        num = random.randint(56, 58)
+
+                    else:
+                        num = random.randint(59, 60)
+
+                    dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"][f"Weapon{x}"] = num
+                    
+                    with open(map_data_path, "w") as f:
+                        json.dump(dataM, f, indent=4)
+
+            x = 0
+            while x < 2:
+                x = x + 1
+
+                with open(map_data_path, "r") as f:
+                    dataM = json.load(f)
+
+                num = random.randint(1, 100)
+
+                if num >= 1 and num < 41:
+                    rarity = 0
+                    
+                elif num >= 41 and num < 71:
+                    rarity = 1
+
+                elif num >= 71 and num < 86:
+                    rarity = 2
+
+                elif num >= 86 and num < 96:
+                    rarity = 3
+
+                else:
+                    rarity = 4
+
+                if rarity == 0:
+                    num = random.randint(1, 7)
+
+                elif rarity == 1:
+                    num = random.randint(8, 11)
+
+                elif rarity == 2:
+                    num = random.randint(12, 15)
+
+                elif rarity == 3:
+                    num = random.randint(16, 18)
+
+                else:
+                    num = random.randint(19, 20)
+
+                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"][f"Artifact{x}"] = num
+                    
                 with open(map_data_path, "w") as f:
                     json.dump(dataM, f, indent=4)
 
-            else:
-                num = random.randint(31, 45)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Weapon1"] = num
-                num = random.randint(31, 45)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Weapon2"] = num
+            x = 0
+            while x < 2:
+                x = x + 1
 
-                num = random.randint(1, 20)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Artifact1"] = num
-                num = random.randint(1, 20)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Artifact2"] = num
+                with open(map_data_path, "r") as f:
+                    dataM = json.load(f)
 
                 num = random.randint(1, 10)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Potion1"] = num
-                num = random.randint(1, 10)
-                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"]["Potion2"] = num
+
+                dataM["MapData"][f"{player_name}"]["Offers"][f"Potion{x}"] = num
 
                 with open(map_data_path, "w") as f:
                     json.dump(dataM, f, indent=4)
