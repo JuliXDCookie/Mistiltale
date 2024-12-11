@@ -1,3 +1,27 @@
 {
-    "PlayerData": {}
+    "PlayerData": {
+        "JuliXD": {
+            "PlayerInfo": {
+                "Name": "JuliXD",
+                "Class": "Mage",
+                "Area": 0
+            },
+            "PlayerStats": {
+                "HP": 30,
+                "MP": 30,
+                "ATK": 8,
+                "DEF": 4,
+                "SPD": 6
+            },
+            "PlayerInventory": {
+                "Money": 100,
+                "Weapon": 0,
+                "Artifact": 0,
+                "Potions": {
+                    "Potion1": 0,
+                    "Potion2": 0
+                }
+            }
+        }
+    }
 }

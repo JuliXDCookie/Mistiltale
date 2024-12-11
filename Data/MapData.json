@@ -1,3 +1,250 @@
 {
-    "MapData": {}
+    "MapData": {
+        "JuliXD": {
+            "Area1": {
+                "EnvironmentType": 5,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 1,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area2": {
+                "EnvironmentType": 4,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 1,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area3": {
+                "EnvironmentType": 3,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 1,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area4": {
+                "EnvironmentType": 2,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area5": {
+                "EnvironmentType": 3,
+                "AreaType": 1,
+                "Event": 5
+            },
+            "Area6": {
+                "EnvironmentType": 0,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 2,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area7": {
+                "EnvironmentType": 4,
+                "AreaType": 1,
+                "Event": 4
+            },
+            "Area8": {
+                "EnvironmentType": 3,
+                "AreaType": 1,
+                "Event": 1
+            },
+            "Area9": {
+                "EnvironmentType": 2,
+                "AreaType": 2
+            },
+            "Area10": {
+                "EnvironmentType": 6,
+                "AreaType": 5
+            },
+            "Area11": {
+                "EnvironmentType": 1,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area12": {
+                "EnvironmentType": 1,
+                "AreaType": 1,
+                "Event": 7
+            },
+            "Area13": {
+                "EnvironmentType": 2,
+                "AreaType": 4,
+                "TreasureType": 1,
+                "TreasureTypeObject": 20
+            },
+            "Area14": {
+                "EnvironmentType": 0,
+                "AreaType": 3,
+                "Offers": {
+                    "Weapon1": 46,
+                    "Weapon2": 44,
+                    "Artifact1": 1,
+                    "Artifact2": 12,
+                    "Potion1": 1,
+                    "Potion2": 4
+                }
+            },
+            "Area15": {
+                "EnvironmentType": 1,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area16": {
+                "EnvironmentType": 2,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 1,
+                    "Enemy5": 0
+                }
+            },
+            "Area17": {
+                "EnvironmentType": 0,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area18": {
+                "EnvironmentType": 3,
+                "AreaType": 1,
+                "Event": 3
+            },
+            "Area19": {
+                "EnvironmentType": 3,
+                "AreaType": 2
+            },
+            "Area20": {
+                "EnvironmentType": 6,
+                "AreaType": 5
+            },
+            "Area21": {
+                "EnvironmentType": 1,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 1,
+                    "Enemy5": 0
+                }
+            },
+            "Area22": {
+                "EnvironmentType": 3,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 1,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area23": {
+                "EnvironmentType": 0,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 2,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area24": {
+                "EnvironmentType": 2,
+                "AreaType": 1,
+                "Event": 1
+            },
+            "Area25": {
+                "EnvironmentType": 3,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 1,
+                    "Enemy5": 0
+                }
+            },
+            "Area26": {
+                "EnvironmentType": 0,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area27": {
+                "EnvironmentType": 3,
+                "AreaType": 3,
+                "Offers": {
+                    "Weapon1": 51,
+                    "Weapon2": 45,
+                    "Artifact1": 2,
+                    "Artifact2": 15,
+                    "Potion1": 2,
+                    "Potion2": 2
+                }
+            },
+            "Area28": {
+                "EnvironmentType": 2,
+                "AreaType": 4,
+                "TreasureType": 1,
+                "TreasureTypeObject": 17
+            },
+            "Area29": {
+                "EnvironmentType": 2,
+                "AreaType": 2
+            },
+            "Area30": {
+                "EnvironmentType": 7,
+                "AreaType": 6
+            }
+        }
+    }
 }

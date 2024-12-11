@@ -460,7 +460,10 @@ def CreateMap():
             with open(map_data_path, "w") as f:
                 json.dump(dataM, f, indent=4)
 
-            if player_class == "Swordsman":
+            with open(player_data_path, "r") as f:
+                dataP = json.load(f)
+
+            if dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Class"] == "Swordsman":
 
                 x = 0
                 while x < 2:
@@ -506,7 +509,7 @@ def CreateMap():
                     with open(map_data_path, "w") as f:
                         json.dump(dataM, f, indent=4)
 
-            elif player_class == "Archer":
+            elif dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Class"] == "Archer":
 
                 x = 0
                 while x < 2:
@@ -552,7 +555,7 @@ def CreateMap():
                     with open(map_data_path, "w") as f:
                         json.dump(dataM, f, indent=4)
 
-            elif player_class == "Mage":
+            elif dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Class"] == "Mage":
 
                 x = 0
                 while x < 2:
@@ -651,7 +654,7 @@ def CreateMap():
 
                 num = random.randint(1, 10)
 
-                dataM["MapData"][f"{player_name}"]["Offers"][f"Potion{x}"] = num
+                dataM["MapData"][f"{player_name}"][f"Area{i}"]["Offers"][f"Potion{x}"] = num
 
                 with open(map_data_path, "w") as f:
                     json.dump(dataM, f, indent=4)
