@@ -674,30 +674,160 @@ def CreateMap():
 
             if dataM["MapData"][f"{player_name}"][f"Area{i}"]["TreasureType"] == 0:
 
-                if player_class == "Swordsman":
-                    num = random.randint(1, 15)
+                with open(player_data_path, "r") as f:
+                    dataP = json.load(f)
+
+                if dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Class"] == "Swordsman":
+                    num = random.randint(1, 100)
+
+                    if num >= 1 and num < 41:
+                        rarity = 0
+                    
+                    elif num >= 41 and num < 71:
+                        rarity = 1
+
+                    elif num >= 71 and num < 86:
+                        rarity = 2
+
+                    elif num >= 86 and num < 96:
+                        rarity = 3
+
+                    else:
+                        rarity = 4
+
+                    if rarity == 0:
+                        num = random.randint(1, 7)
+
+                    elif rarity == 1:
+                        num = random.randint(8, 11)
+
+                    elif rarity == 2:
+                        num = random.randint(12, 15)
+
+                    elif rarity == 3:
+                        num = random.randint(16, 18)
+
+                    else:
+                        num = random.randint(19, 20)
+
                     dataM["MapData"][f"{player_name}"][f"Area{i}"]["TreasureTypeObject"] = num
 
                     with open(map_data_path, "w") as f:
                         json.dump(dataM, f, indent=4)
 
-                elif player_class == "Archer":
-                    num = random.randint(16, 30)
+                elif dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Class"] == "Archer":
+                    num = random.randint(1, 100)
+
+                    if num >= 1 and num < 41:
+                        rarity = 0
+                    
+                    elif num >= 41 and num < 71:
+                        rarity = 1
+
+                    elif num >= 71 and num < 86:
+                        rarity = 2
+
+                    elif num >= 86 and num < 96:
+                        rarity = 3
+
+                    else:
+                        rarity = 4
+
+                    if rarity == 0:
+                        num = random.randint(21, 27)
+
+                    elif rarity == 1:
+                        num = random.randint(28, 31)
+
+                    elif rarity == 2:
+                        num = random.randint(32, 35)
+
+                    elif rarity == 3:
+                        num = random.randint(36, 38)
+
+                    else:
+                        num = random.randint(39, 40)
+
                     dataM["MapData"][f"{player_name}"][f"Area{i}"]["TreasureTypeObject"] = num
 
                     with open(map_data_path, "w") as f:
                         json.dump(dataM, f, indent=4)
 
-                else:
-                    num = random.randint(31, 45)
+                elif dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Class"] == "Mage":
+                    num = random.randint(1, 100)
+
+                    if num >= 1 and num < 41:
+                        rarity = 0
+                    
+                    elif num >= 41 and num < 71:
+                        rarity = 1
+
+                    elif num >= 71 and num < 86:
+                        rarity = 2
+
+                    elif num >= 86 and num < 96:
+                        rarity = 3
+
+                    else:
+                        rarity = 4
+
+                    if rarity == 0:
+                        num = random.randint(41, 47)
+
+                    elif rarity == 1:
+                        num = random.randint(48, 51)
+
+                    elif rarity == 2:
+                        num = random.randint(52, 55)
+
+                    elif rarity == 3:
+                        num = random.randint(56, 58)
+
+                    else:
+                        num = random.randint(59, 60)
+
                     dataM["MapData"][f"{player_name}"][f"Area{i}"]["TreasureTypeObject"] = num
 
                     with open(map_data_path, "w") as f:
                         json.dump(dataM, f, indent=4)
 
             elif dataM["MapData"][f"{player_name}"][f"Area{i}"]["TreasureType"] == 1:
-                num = random.randint(1, 20)
+                num = random.randint(1, 100)
+
+                if num >= 1 and num < 41:
+                    rarity = 0
+                    
+                elif num >= 41 and num < 71:
+                    rarity = 1
+
+                elif num >= 71 and num < 86:
+                    rarity = 2
+
+                elif num >= 86 and num < 96:
+                    rarity = 3
+
+                else:
+                    rarity = 4
+
+                if rarity == 0:
+                    num = random.randint(1, 7)
+
+                elif rarity == 1:
+                    num = random.randint(8, 11)
+
+                elif rarity == 2:
+                    num = random.randint(12, 15)
+
+                elif rarity == 3:
+                    num = random.randint(16, 18)
+
+                else:
+                    num = random.randint(19, 20)
+
                 dataM["MapData"][f"{player_name}"][f"Area{i}"]["TreasureTypeObject"] = num
+                    
+                with open(map_data_path, "w") as f:
+                    json.dump(dataM, f, indent=4)
 
                 with open(map_data_path, "w") as f:
                     json.dump(dataM, f, indent=4)
