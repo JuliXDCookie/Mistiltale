@@ -1,3 +1,204 @@
 {
-    "MapData": {}
+    "MapData": {
+        "JuliXD": {
+            "Area1": {
+                "EnvironmentType": 1,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 2,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area2": {
+                "EnvironmentType": 5,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area3": {
+                "EnvironmentType": 1,
+                "AreaType": 4,
+                "TreasureType": 2,
+                "TreasureTypeObject": 9
+            },
+            "Area4": {
+                "EnvironmentType": 1,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 1,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area5": {
+                "EnvironmentType": 1,
+                "AreaType": 2
+            },
+            "Area6": {
+                "EnvironmentType": 2,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area7": {
+                "EnvironmentType": 0,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area8": {
+                "EnvironmentType": 0,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 2,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area9": {
+                "EnvironmentType": 1,
+                "AreaType": 2
+            },
+            "Area10": {
+                "EnvironmentType": 6,
+                "AreaType": 5
+            },
+            "Area11": {
+                "EnvironmentType": 2,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 1,
+                    "Enemy5": 0
+                }
+            },
+            "Area12": {
+                "EnvironmentType": 3,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 0,
+                    "Enemy3": 1,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area13": {
+                "EnvironmentType": 0,
+                "AreaType": 1,
+                "Event": 4
+            },
+            "Area14": {
+                "EnvironmentType": 2,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 0,
+                    "Enemy2": 1,
+                    "Enemy3": 0,
+                    "Enemy4": 1,
+                    "Enemy5": 0
+                }
+            },
+            "Area15": {
+                "EnvironmentType": 3,
+                "AreaType": 0,
+                "Enemies": {
+                    "Enemy1": 1,
+                    "Enemy2": 0,
+                    "Enemy3": 0,
+                    "Enemy4": 0,
+                    "Enemy5": 0
+                }
+            },
+            "Area16": {
+                "EnvironmentType": 1,
+                "AreaType": 1,
+                "Event": 3
+            },
+            "Area17": {
+                "EnvironmentType": 1,
+                "AreaType": 3,
+                "Offers": {
+                    "Artifact1": 6,
+                    "Artifact2": 7
+                }
+            },
+            "Area18": {
+                "EnvironmentType": 2,
+                "AreaType": 0
+            },
+            "Area19": {
+                "EnvironmentType": 4,
+                "AreaType": 2
+            },
+            "Area20": {
+                "EnvironmentType": 6,
+                "AreaType": 5
+            },
+            "Area21": {
+                "EnvironmentType": 3,
+                "AreaType": 0
+            },
+            "Area22": {
+                "EnvironmentType": 0,
+                "AreaType": 0
+            },
+            "Area23": {
+                "EnvironmentType": 1,
+                "AreaType": 0
+            },
+            "Area24": {
+                "EnvironmentType": 3,
+                "AreaType": 0
+            },
+            "Area25": {
+                "EnvironmentType": 1,
+                "AreaType": 3
+            },
+            "Area26": {
+                "EnvironmentType": 0,
+                "AreaType": 0
+            },
+            "Area27": {
+                "EnvironmentType": 1,
+                "AreaType": 1
+            },
+            "Area28": {
+                "EnvironmentType": 3,
+                "AreaType": 0
+            },
+            "Area29": {
+                "EnvironmentType": 0,
+                "AreaType": 2
+            },
+            "Area30": {
+                "EnvironmentType": 7,
+                "AreaType": 6
+            }
+        }
+    }
 }

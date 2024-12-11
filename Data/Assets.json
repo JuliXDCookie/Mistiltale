@@ -2,12 +2,13 @@
     "Map": {
         "EnvironmentTypes": {
             "Plains": 0,
-            "Snowy Taiga": 1,
-            "Forest": 2,
+            "Forest": 1,
+            "Snowy Taiga": 2,
             "Mountain": 3,
-            "Sea": 4,
-            "Cracked Realm": 5,
-            "Shattered Realm": 6
+            "Desert": 4,
+            "Sea": 5,
+            "Cracked Realm": 6,
+            "Shattered Realm": 7
         },
         "AreaTypes": {
             "Fighting-Area": 0,
@@ -35,13 +36,6 @@
             "Event9": {},
             "Event10": {}
         },
-        "Snowy Taiga": {
-            "Event1": {},
-            "Event2": {},
-            "Event3": {},
-            "Event4": {},
-            "Event5": {}
-        },
         "Forest": {
             "Event1": {},
             "Event2": {},
@@ -50,17 +44,29 @@
             "Event5": {},
             "Event6": {},
             "Event7": {},
-            "Event8": {},
-            "Event9": {},
-            "Event10": {}
+            "Event8": {}
         },
-        "Mountain": {
+        "Snowy Taiga": {
             "Event1": {},
             "Event2": {},
             "Event3": {},
             "Event4": {},
             "Event5": {},
             "Event6": {}
+        },
+        "Mountain": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {},
+            "Event4": {},
+            "Event5": {}
+        },
+        "Desert": {
+            "Event1": {},
+            "Event2": {},
+            "Event3": {},
+            "Event4": {},
+            "Event5": {}
         },
         "Sea": {
             "Event1": {},
