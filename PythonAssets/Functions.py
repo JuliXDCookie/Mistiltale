@@ -122,7 +122,7 @@ def CreatePlayer():
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["DEF"] = 8
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SPD"] = 4
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"] = {}
-                dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Money"] = 100
+                dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Mistilcoin"] = 100
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Weapon"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Artifact"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Potions"] = {}
@@ -144,7 +144,7 @@ def CreatePlayer():
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["DEF"] = 5
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SPD"] = 8
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"] = {}
-                dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Money"] = 100
+                dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Mistilcoin"] = 100
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Weapon"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Artifact"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Potions"] = {}
@@ -166,7 +166,7 @@ def CreatePlayer():
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["DEF"] = 4
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SPD"] = 6
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"] = {}
-                dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Money"] = 100
+                dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Mistilcoin"] = 100
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Weapon"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Artifact"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerInventory"]["Potions"] = {}
@@ -898,3 +898,13 @@ def DeletePlayer():
             print("This Command does not Exist!")
             time.sleep(3)
             os.system("cls")
+
+def ResetTemp():
+    with open(temp_path, "r") as f:
+        dataT = json.load(f)
+
+    dataT["Temp"]["SkipLoop"] = 0
+    dataT["Temp"]["CharacterName"] = " "
+
+    with open(temp_path, "w") as f:
+        json.dump(dataT, f, indent=4)

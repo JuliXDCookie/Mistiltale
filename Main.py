@@ -4,7 +4,7 @@ import time
 import json
 
 #Import Assets
-from PythonAssets.Functions import CreatePlayer, DeletePlayer, CreateMap
+from PythonAssets.Functions import CreatePlayer, DeletePlayer, CreateMap, ResetTemp
 
 #StartUp
 os.system("title Mistiltale")
@@ -25,17 +25,13 @@ temp_path = dataPath["Paths"]["Temp"]
 #Menu
 loop = 1
 while loop == 1:
-    with open(temp_path, "r") as f:
-        dataT = json.load(f)
-
-    dataT["Temp"]["SkipLoop"] = 0
-    dataT["Temp"]["CharacterName"] = " "
-
-    with open(temp_path, "w") as f:
-        json.dump(dataT, f, indent=4)
+    ResetTemp()
 
     with open(player_data_path, "r") as f:
         dataP = json.load(f)
+
+    with open(temp_path, "r") as f:
+        dataT = json.load(f)
     
     print("Welcome to Mistiltale :D")
     print("------------------------------")
