@@ -20,12 +20,55 @@
             "Boss-Area": 6
         }
     },
-    "Enemies": {},
+    "Enemies": {
+        "Plains": {
+            "Enemy1": {
+                "Name": "",
+                "Stats": {
+                    "HP": 0,
+                    "MP": 0,
+                    "ATK": 0,
+                    "DEF": 0,
+                    "SPD": 0
+                },
+                "Attacks": {
+                    "Attack1": {
+                        "Attack1-Name": "",
+                        "Attack1-DMG-Multiplier": 1
+                    },
+                    "Attack2": {
+                        "Attack2-Name": "",
+                        "Attack2-DMG-Multiplier": 1.25
+                    }
+                }
+            }
+        },
+        "Forest": {},
+        "Snowy Taiga": {},
+        "Mountain": {},
+        "Desert": {},
+        "Sea": {},
+        "Cracked Realm": {},
+        "Shattered Realm": {}
+    },
     "Mini-Bosses": {},
     "Boss": {},
     "Events": {
         "Plains": {
-            "Event1": {},
+            "Event1": {
+                "Event-Text": "",
+                "Choices": {
+                    "Choice1": {
+                        "Choice1-Text": ""
+                    },
+                    "Choice2": {
+                        "Choice2-Text": ""
+                    },
+                    "Choice3": {
+                        "Choice3-Text": ""
+                    }
+                }
+            },
             "Event2": {},
             "Event3": {},
             "Event4": {},
@@ -74,7 +117,53 @@
             "Event3": {}
         }
     },
-    "Weapons": {},
-    "Artifacts": {},
+    "Weapons": {
+        "Swordsman": {
+            "Common": {
+                "0":{
+                    "Name": "",
+                    "DMG": 0,
+                    "ID": 0
+                }
+            },
+            "Uncommon": {},
+            "Rare": {},
+            "Epic": {},
+            "Legendary": {}
+        },
+        "Archer": {
+            "Common": {},
+            "Uncommon": {},
+            "Rare": {},
+            "Epic": {},
+            "Legendary": {}
+        },
+        "Mage": {
+            "Common": {},
+            "Uncommon": {},
+            "Rare": {},
+            "Epic": {},
+            "Legendary": {}
+        }
+    },
+    "Artifacts": {
+        "Common": {
+            "0": {
+                "Name": "",
+                "Stats": {
+                    "HP": 0,
+                    "MP": 0,
+                    "ATK": 0,
+                    "DEF": 0,
+                    "SPD": 0
+                },
+                "ID": 0
+            }
+        },
+        "Uncommon": {},
+        "Rare": {},
+        "Epic": {},
+        "Legendary": {}
+    },
     "Potions": {}
 }
