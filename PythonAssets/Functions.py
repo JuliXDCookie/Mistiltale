@@ -117,7 +117,7 @@ def CreatePlayer():
                 dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Area"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"] = {}
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["HP"] = 45
-                dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["MP"] = 20
+                dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SP"] = 20
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["ATK"] = 8
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["DEF"] = 8
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SPD"] = 4
@@ -139,7 +139,7 @@ def CreatePlayer():
                 dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Area"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"] = {}
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["HP"] = 35
-                dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["MP"] = 20
+                dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SP"] = 20
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["ATK"] = 6
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["DEF"] = 5
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SPD"] = 8
@@ -161,7 +161,7 @@ def CreatePlayer():
                 dataP["PlayerData"][f"{player_name}"]["PlayerInfo"]["Area"] = 0
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"] = {}
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["HP"] = 30
-                dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["MP"] = 30
+                dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SP"] = 30
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["ATK"] = 8
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["DEF"] = 4
                 dataP["PlayerData"][f"{player_name}"]["PlayerStats"]["SPD"] = 6
