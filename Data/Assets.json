@@ -30,23 +30,25 @@
                     "DEF": 2,
                     "SPD": 2
                 },
-                "Attacks": {
-                    "Attack1": {
-                        "Attack1-Name": "Tackle",
-                        "Attack1-DMG-Multiplier": 1,
-                        "Attack1-Crit-Rate": 5,
-                        "Attack1-Chance-Range-Start": 1,
-                        "Attack1-Chance-Range-End": 80
+                "Moves": {
+                    "Move1": {
+                        "Move1-Name": "Tackle",
+                        "Move1-Type": "Attack",
+                        "Move1-DMG-Multiplier": 1,
+                        "Move1-Crit-Rate": 5,
+                        "Move1-Chance-Range-Start": 1,
+                        "Move1-Chance-Range-End": 80
                     },
-                    "Attack2": {
-                        "Attack2-Name": "Slimeshot",
-                        "Attack2-DMG-Multiplier": 1.25,
-                        "Attack2-Crit-Rate": 20,
-                        "Attack2-Chance-Range-Start": 81,
-                        "Attack2-Chance-Range-End": 100
+                    "Move2": {
+                        "Move2-Name": "Slimeshot",
+                        "Move2-Type": "Attack",
+                        "Move2-DMG-Multiplier": 1.25,
+                        "Move2-Crit-Rate": 20,
+                        "Move2-Chance-Range-Start": 81,
+                        "Move2-Chance-Range-End": 100
                     }
                 },
-                "Attack-Amount": 2
+                "Move-Amount": 2
             },
             "Enemy2": {
                 "Name": "Large Slime",
@@ -56,82 +58,91 @@
                     "DEF": 4,
                     "SPD": 2
                 },
-                "Attacks": {
-                    "Attack1": {
-                        "Attack1-Name": "Tackle",
-                        "Attack1-DMG-Multiplier": 1.1,
-                        "Attack1-Crit-Rate": 10,
-                        "Attack1-Chance-Range-Start": 1,
-                        "Attack1-Chance-Range-End": 60
+                "Moves": {
+                    "Move1": {
+                        "Move1-Name": "Tackle",
+                        "Move1-Type": "Attack",
+                        "Move1-DMG-Multiplier": 1.1,
+                        "Move1-Crit-Rate": 10,
+                        "Move1-Chance-Range-Start": 1,
+                        "Move1-Chance-Range-End": 60
                     },
-                    "Attack2": {
-                        "Attack2-Name": "Slimeshot",
-                        "Attack2-DMG-Multiplier": 1.4,
-                        "Attack2-Crit-Rate": 25,
-                        "Attack2-Chance-Range-Start": 61,
-                        "Attack2-Chance-Range-End": 100
+                    "Move2": {
+                        "Move2-Name": "Slimeshot",
+                        "Move2-Type": "Attack",
+                        "Move2-DMG-Multiplier": 1.4,
+                        "Move2-Crit-Rate": 25,
+                        "Move2-Chance-Range-Start": 61,
+                        "Move2-Chance-Range-End": 100
                     }
                 },
-                "Attack-Amount": 2
+                "Move-Amount": 2
             },
             "Enemy3": {
-                "Name": "Bee",
+                "Name": "Goblin",
                 "Stats": {
-                    "HP": 20,
+                    "HP": 25,
                     "ATK": 6,
                     "DEF": 2,
                     "SPD": 5
                 },
-                "Attacks": {
-                    "Attack1": {
-                        "Attack1-Name": "Spit",
-                        "Attack1-DMG-Multiplier": 0.5,
-                        "Attack1-Crit-Rate": 5,
-                        "Attack1-Chance-Range-Start": 1,
-                        "Attack1-Chance-Range-End": 90
+                "Moves": {
+                    "Move1": {
+                        "Move1-Name": "Spit",
+                        "Move1-Type": "Attack",
+                        "Move1-DMG-Multiplier": 0.5,
+                        "Move1-Crit-Rate": 5,
+                        "Move1-Chance-Range-Start": 1,
+                        "Move1-Chance-Range-End": 40
                     },
-                    "Attack2": {
-                        "Attack2-Name": "Sting",
-                        "Attack2-DMG-Multiplier": 1.5,
-                        "Attack2-Crit-Rate": 20,
-                        "Attack2-Chance-Range-Start": 91,
-                        "Attack2-Chance-Range-End": 100
+                    "Move2": {
+                        "Move2-Name": "Bite",
+                        "Move2-Type": "Attack",
+                        "Move2-DMG-Multiplier": 1.2,
+                        "Move2-Crit-Rate": 20,
+                        "Move2-Chance-Range-Start": 41,
+                        "Move2-Chance-Range-End": 80
+                    },
+                    "Move3": {
+                        "Move3-Name": "Scratch",
+                        "Move3-Type": "Attack",
+                        "Move3-DMG-Multiplier": 1.4,
+                        "Move3-Crit-Rate": 20,
+                        "Move3-Chance-Range-Start": 81,
+                        "Move3-Chance-Range-End": 100
                     }
                 },
-                "Attack-Amount": 2
+                "Move-Amount": 3
             },
             "Enemy4": {
-                "Name": "Living Tree",
+                "Name": "Dwarf",
                 "Stats": {
-                    "HP": 40,
-                    "ATK": 4,
+                    "HP": 15,
+                    "ATK": 1,
                     "DEF": 6,
-                    "SPD": 1
+                    "SPD": 5
                 },
-                "Attacks": {
-                    "Attack1": {
-                        "Attack1-Name": "Branch Throw",
-                        "Attack1-DMG-Multiplier": 1,
-                        "Attack1-Crit-Rate": 5,
-                        "Attack1-Chance-Range-Start": 1,
-                        "Attack1-Chance-Range-End": 60
+                "Moves": {
+                    "Move1": {
+                        "Move1-Name": "Refresh",
+                        "Move1-Type": "Heal",
+                        "Move1-Heal": 5,
+                        "Move1-Chance-Range-Start": 1,
+                        "Move1-Chance-Range-End": 80
                     },
-                    "Attack2": {
-                        "Attack2-Name": "Root",
-                        "Attack2-DMG-Multiplier": 1.2,
-                        "Attack2-Crit-Rate": 15,
-                        "Attack2-Chance-Range-Start": 61,
-                        "Attack2-Chance-Range-End": 90
-                    },
-                    "Attack3": {
-                        "Attack3-Name": "Mud Bomb",
-                        "Attack3-DMG-Multiplier": 1.4,
-                        "Attack3-Crit-Rate": 30,
-                        "Attack3-Chance-Range-Start": 91,
-                        "Attack3-Chance-Range-End": 100
+                    "Move2": {
+                        "Move2-Name": "Protect",
+                        "Move2-Type": "Buff",
+                        "Move2-HP-Buff": 0,
+                        "Move2-ATK-Buff": 0,
+                        "Move2-DEF-Buff": 2,
+                        "Move2-SPD-Buff": 0,
+                        "Move2-Buff-Duration": 2,
+                        "Move2-Chance-Range-Start": 81,
+                        "Move2-Chance-Range-End": 100
                     }
                 },
-                "Attack-Amount": 3
+                "Move-Amount": 2
             },
             "Enemy5": {
                 "Name": "Gigantic Slime",
@@ -141,53 +152,36 @@
                     "DEF": 6,
                     "SPD": 1
                 },
-                "Attacks": {
-                    "Attack1": {
-                        "Attack1-Name": "Tackle",
-                        "Attack1-DMG-Multiplier": 1.2,
-                        "Attack1-Crit-Rate": 10,
-                        "Attack1-Chance-Range-Start": 1,
-                        "Attack1-Chance-Range-End": 60
+                "Moves": {
+                    "Move1": {
+                        "Move1-Name": "Tackle",
+                        "Move1-Type": "Attack",
+                        "Move1-DMG-Multiplier": 1.2,
+                        "Move1-Crit-Rate": 10,
+                        "Move1-Chance-Range-Start": 1,
+                        "Move1-Chance-Range-End": 60
                     },
-                    "Attack2": {
-                        "Attack2-Name": "Slimeshot",
-                        "Attack2-DMG-Multiplier": 1.5,
-                        "Attack2-Crit-Rate": 25,
-                        "Attack2-Chance-Range-Start": 61,
-                        "Attack2-Chance-Range-End": 90
+                    "Move2": {
+                        "Move2-Name": "Slimeshot",
+                        "Move2-Type": "Attack",
+                        "Move2-DMG-Multiplier": 1.5,
+                        "Move2-Crit-Rate": 25,
+                        "Move2-Chance-Range-Start": 61,
+                        "Move2-Chance-Range-End": 90
                     },
-                    "Attack3": {
-                        "Attack3-Name": "Slimecanon",
-                        "Attack3-DMG-Multiplier": 2,
-                        "Attack3-Crit-Rate": 30,
-                        "Attack3-Chance-Range-Start": 91,
-                        "Attack3-Chance-Range-End": 100
+                    "Move3": {
+                        "Move3-Name": "Slimecanon",
+                        "Move3-Type": "Attack",
+                        "Move3-DMG-Multiplier": 2,
+                        "Move3-Crit-Rate": 30,
+                        "Move3-Chance-Range-Start": 91,
+                        "Move3-Chance-Range-End": 100
                     }
                 },
-                "Attack-Amount": 3
+                "Move-Amount": 3
             }
         },
-        "Forest": {
-            "Enemy1": {
-                "Name": "",
-                "Stats": {
-                    "HP": 0,
-                    "ATK": 0,
-                    "DEF": 0,
-                    "SPD": 0
-                },
-                "Attacks": {
-                    "Attack1": {
-                        "Attack1-Name": "",
-                        "Attack1-DMG-Multiplier": 0,
-                        "Attack1-Crit-Rate": 0,
-                        "Attack1-Chance-Range-Start": 0,
-                        "Attack1-Chance-Range-End": 0
-                    }
-                },
-                "Attack-Amount": 0
-            }
-        },
+        "Forest": {},
         "Snowy Taiga": {},
         "Mountain": {},
         "Desert": {},
